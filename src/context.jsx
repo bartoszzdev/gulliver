@@ -16,7 +16,7 @@ const AppProvider = ({ children }) => {
       let destinos = data;
 
       destinos = destinos.filter(destino => {
-        return destino.titulo.toLowerCase().startsWith(searchTerm)
+        return destino.titulo.toLowerCase().startsWith(searchTerm.toLowerCase())
       })
 
       if (destinos) {
